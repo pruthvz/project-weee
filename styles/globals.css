@@ -1,16 +1,118 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
 
+body {
+  background: #f2f2f2;
+  color: #333;
+  font-family: "Nunito";
+}
 a {
-  color: inherit;
+  color: #333;
   text-decoration: none;
 }
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+nav {
+  margin: 10px auto 80px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid #ddd;
+}
+nav a {
+  margin-left: 12px;
+  transition: all 0.1s ease-in-out;
+}
+nav .logo {
+  margin-right: auto;
+}
+footer {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+  color: #777;
+  border-top: 1px solid #eaeaea;
+}
 
-* {
-  box-sizing: border-box;
+nav a:hover {
+  color: red;
+}
+
+.not-found {
+  text-align: center;
+  height: 40vh;
+}
+
+.not-found h1 {
+  font-size: 40px;
+}
+
+.not-found a {
+  position: relative;
+  top: 10px;
+  color: white;
+  background: black;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+}
+.not-found a:hover {
+  background: rgb(91, 91, 91);
+}
+
+#titleIcon {
+  height: 40px !important;
+  position: relative;
+  top: 10px;
+}
+
+#users h3 {
+  background: white;
+  padding: 20px;
+  border-left: 5px solid rgb(0, 0, 0);
+  transition: all 0.1s ease-in-out;
+}
+
+#users h3:hover {
+  border-left: 5px solid #f25f4c;
+  background: #e6e6e9;
+}
+
+/* user styling */
+#user {
+  padding: 50px;
+  background: #fffffe;
+  border-radius: 4px;
+}
+#user h1 {
+  color: blac;
+  margin: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+
+#user p {
+  margin: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: #1b2d45bd;
+}
+
+#user a {
+  background: #00ebc7;
+  color: #00214d;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+#user a:hover {
+  background: #00ebc8af;
 }
